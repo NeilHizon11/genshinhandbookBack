@@ -9,24 +9,26 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin(originPatterns = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/")
+@CrossOrigin(originPatterns = "http://localhost:3000")
 public class GenshinCharacterController {
 
     @Autowired
     private GenshinCharacterService genshinCharacterService;
 
     @PostMapping("/add")
-    public String add(@RequestBody GenshinCharacter genshinCharacter){
+    public String add(@RequestBody GenshinCharacter genshinCharacter) {
         genshinCharacterService.saveGenshinCharacter(genshinCharacter);
         return "Character has been added successfully";
     }
 
     @GetMapping("/getAll")
-    public List<GenshinCharacter> getAllGenshinCharacter(){
+    public List<GenshinCharacter> getAllGenshinCharacter() {
         return genshinCharacterService.getAllGenshinCharacter();
-    };
+    }
+
+    ;
 
 
 }
