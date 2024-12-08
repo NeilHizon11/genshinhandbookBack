@@ -20,8 +20,9 @@ import com.genshinhandbook.Genshin.Handbook.model.GenshinCharacter;
 import com.genshinhandbook.Genshin.Handbook.service.GenshinCharacterService;
 
 /**
- * Unit test for GenshinCharacterController class. Author: antoni Date:
- * 12/08/2024
+ * Unit test for GenshinCharacterController class.
+ * Author: antoni
+ * Date: 12/08/2024
  */
 
 @WebMvcTest(GenshinCharacterController.class)
@@ -37,8 +38,8 @@ class GenshinCharacterControllerTest {
 	private ObjectMapper objectMapper;
 
 	/**
-	 * Test the getAllGenshinCharacter() method. Verifies that the controller
-	 * returns a list of all characters.
+	 * Test the getAllGenshinCharacter() method.
+	 * Verifies that the controller returns a list of all characters.
 	 */
 	@Test
 	void testGetAllCharacters() throws Exception {
@@ -51,8 +52,8 @@ class GenshinCharacterControllerTest {
 	}
 
 	/**
-	 * Test the addGenshinCharacter() method. Verifies that the controller can add a
-	 * new character.
+	 * Test the addGenshinCharacter() method.
+	 * Verifies that the controller can add a new character.
 	 */
 	@Test
 	void testAddCharacter() throws Exception {
