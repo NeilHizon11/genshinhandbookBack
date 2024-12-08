@@ -22,7 +22,11 @@ public class GenshinCharacter {
     private String rarity;
     private String photoUrl;
 
-    public void setId(int id) {
+    public GenshinCharacter(int i, String string, String string2, String string3, String string4, String string5) {
+		// empty constructor
+	}
+
+	public void setId(int id) {
         this.id = id;
     }
 
